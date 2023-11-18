@@ -2,24 +2,28 @@
     <div class="position-sticky pt-3 sidebar-sticky">
         <ul class="nav flex-column">
             <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="">
                     <span data-feather="home" class="align-text-bottom"></span>
                     Dashboard
+                </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="">
                     <span data-feather="file" class="align-text-bottom"></span>
                     Venda
+                </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="{{ route('produto.index') }}">
                     <span data-feather="shopping-cart" class="align-text-bottom"></span>
                     Produto
+                </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="">
                     <span data-feather="users" class="align-text-bottom"></span>
                     Clientes
-            </li>
-            <li class="nav-item">
-                    <span data-feather="users" class="align-text-bottom"></span>
-                    Usuario
+                </a>
             </li>
         </ul>
     </div>
