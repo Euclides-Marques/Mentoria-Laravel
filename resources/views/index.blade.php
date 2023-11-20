@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="auto">
+<html lang="en" data-bs-theme="light">
 
 <head>
     <meta charset="utf-8">
@@ -99,6 +99,10 @@
         .bd-mode-toggle {
             z-index: 1500;
         }
+
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+        }
     </style>
 
 </head>
@@ -125,9 +129,6 @@
             @include('componentes.navegacao')
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 @yield('content')
-                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Dashboard</h1>
-                </div>
             </main>
         </div>
     </div>
