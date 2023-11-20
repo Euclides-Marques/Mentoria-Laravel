@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en" data-bs-theme="light">
+<html lang="en" data-bs-theme="auto">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="generator" content="Hugo 0.111.3">
     <title>Gestao</title>
 
     @yield('styles')
@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
 
     <meta name="theme-color" content="#712cf9">
-
 
     <style>
         .bd-placeholder-img {
@@ -99,12 +98,7 @@
         .bd-mode-toggle {
             z-index: 1500;
         }
-
-        .bd-mode-toggle .dropdown-menu .active .bi {
-            display: block !important;
-        }
     </style>
-
 </head>
 
 <body>
@@ -126,7 +120,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            @include('componentes.navegacao')
+            @include('components.navegacao')
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 @yield('content')
             </main>
@@ -135,11 +129,16 @@
 
     @yield('scripts')
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    
     <script src="/js/bootstrap.blundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
     <script src="/js/dashboard.js"></script>
     <script src="/js/color-modes.js"></script>
-</body>
 
+    {{-- BlocUI loading --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.js"></script>
+
+
+</body>
 </html>
