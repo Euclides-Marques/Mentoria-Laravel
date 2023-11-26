@@ -51,11 +51,10 @@ class ClientesController extends Controller
         if($request->method() == 'PUT'){
             //atualiza os dados
             $data = $request -> all();
-            $componentes = new Componentes();
-            $data['valor'] = $componentes->formatacaoMascaraDinheiroDecimal($data['valor']);
             $buscarRegistro = Cliente::find($id);
             $buscarRegistro->update($data);
 
+            Toastr::success("Dados atualizados com sucesso.");
             return redirect()->route('clientes.index');
         }
         //mostrar os dados

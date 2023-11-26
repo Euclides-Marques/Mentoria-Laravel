@@ -58,6 +58,7 @@ class ProdutosController extends Controller
             $buscarRegistro = Produto::find($id);
             $buscarRegistro->update($data);
 
+            Toastr::success('Dados atualizados com sucesso.');
             return redirect()->route('produto.index');
         }
         //mostrar os dados
