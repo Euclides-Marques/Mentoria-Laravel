@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\FormRequestClientes;
-use App\Models\Componentes;
 use App\Models\Cliente;
 use Brian2694\Toastr\Facades\Toastr;
 use Illuminate\Http\Request;
